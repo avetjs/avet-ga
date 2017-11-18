@@ -1,0 +1,24 @@
+{
+  "name": "avet-ga",
+  "version": "0.1.0",
+  "description": "avet ga",
+  "avetPlugin": {
+    "name": "ga"
+  },
+  "keywords": ["avet", "avetPlugin", "avet-plugin", "ga"],
+  "devDependencies": {
+    "avet-bin": "^0.7.0",
+    "babel-eslint": "^8.0.2",
+    "eslint": "^4.10.0",
+    "eslint-config-avet": "^0.3.7"
+  },
+  "author": "okoala <dapixp@gmail.com>",
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "tnpm": {
+    "mode": "npm"
+  },
+  "files": ["config", "app.js"],
+  "license": "MIT"
+}
