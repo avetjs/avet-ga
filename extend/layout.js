@@ -51,7 +51,7 @@ export default ({ config, Router }) => {
           // https://developers.google.com/analytics/devguides/collection/gtagjs/single-page-applications
           window.gtag('config', GA_TRACKING_ID, {
             page_location: newUrl.href,
-            page_path: url.parse(newUrl).path,
+            page_path: newUrl.pathname,
             page_title: window.document.title,
           });
         }
