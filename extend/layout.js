@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default ({ config, Router }) => {
   const GA_TRACKING_ID = config.ga.gaTrackingId;
@@ -16,10 +16,10 @@ export default ({ config, Router }) => {
             function gtag(){dataLayer.push(arguments)};
             gtag('js', new Date());
             gtag('config', '${GA_TRACKING_ID}');
-          `
+          `,
         }}
-      />
-    ]
+      />,
+    ],
   };
 
   const GAMain = class extends React.Component {
@@ -31,14 +31,14 @@ export default ({ config, Router }) => {
       }
 
       window.__NEXT_ROUTER_PAGEVIEW_REGISTERED__ = true;
-      let lastTrackedUrl = "";
+      let lastTrackedUrl = '';
 
       // NOTE: No corresponding `off` as we want this event listener to exist
       // for the entire lifecycle of the page
       // NOTE: This does _not_ fire on first page load. This is what we want
       // since GA already tracks a page view when the tag is first loaded.
       Router.router.events.on(
-        "routeChangeComplete",
+        'routeChangeComplete',
         (newUrl = document.location) => {
           if (newUrl === lastTrackedUrl || !window.gtag) {
             return;
@@ -49,10 +49,10 @@ export default ({ config, Router }) => {
 
           // Believe it or not, this triggers a new pageview event!
           // https://developers.google.com/analytics/devguides/collection/gtagjs/single-page-applications
-          window.gtag("config", GA_TRACKING_ID, {
+          window.gtag('config', GA_TRACKING_ID, {
             page_location: newUrl.href,
             page_path: url.parse(newUrl).path,
-            page_title: window.document.title
+            page_title: window.document.title,
           });
         }
       );
@@ -61,6 +61,6 @@ export default ({ config, Router }) => {
 
   return {
     head: GAHead,
-    main: GAMain
+    main: GAMain,
   };
 };

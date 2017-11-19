@@ -1,5 +1,3 @@
-"use strict";
-
 exports.ga = {
-  gaTrackingId: "xxxxxxxx"
+  gaTrackingId: 'xxxxxxxx',
 };

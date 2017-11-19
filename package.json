@@ -5,6 +5,10 @@
   "avetPlugin": {
     "name": "ga"
   },
+  "scripts": {
+    "build": "avet-bin build",
+    "prepublish": "avet-bin build"
+  },
   "keywords": ["avet", "avetPlugin", "avet-plugin", "ga"],
   "devDependencies": {
     "avet-bin": "^0.7.0",
@@ -12,13 +16,14 @@
     "eslint": "^4.10.0",
     "eslint-config-avet": "^0.3.7"
   },
-  "author": "okoala <dapixp@gmail.com>",
-  "engines": {
-    "node": ">= 8.0.0"
-  },
   "tnpm": {
     "mode": "npm"
   },
-  "files": ["config", "app.js"],
+  "homepage": "https://github.com/avetjs/avet",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avetjs/avet.git"
+  },
+  "author": "okoala <dapixp@gmail.com>",
   "license": "MIT"
 }
