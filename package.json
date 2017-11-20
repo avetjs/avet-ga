@@ -1,6 +1,6 @@
 {
   "name": "avet-ga",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "avet ga",
   "avetPlugin": {
     "name": "ga"
@@ -9,12 +9,7 @@
     "build": "avet-bin build",
     "prepublish": "avet-bin build"
   },
-  "keywords": [
-    "avet",
-    "avetPlugin",
-    "avet-plugin",
-    "ga"
-  ],
+  "keywords": ["avet", "avetPlugin", "avet-plugin", "ga"],
   "devDependencies": {
     "avet-bin": "^0.7.0",
     "babel-eslint": "^8.0.2",
