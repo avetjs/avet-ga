@@ -1,6 +1,6 @@
 {
   "name": "avet-ga",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "avet ga",
   "avetPlugin": {
     "name": "ga"
@@ -9,6 +9,7 @@
     "build": "avet-bin build",
     "prepublish": "avet-bin build"
   },
+  "files": ["config", "extend", "output"],
   "keywords": ["avet", "avetPlugin", "avet-plugin", "ga"],
   "devDependencies": {
     "avet-bin": "^0.7.4",
