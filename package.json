@@ -1,6 +1,6 @@
 {
   "name": "avet-ga",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "avet ga",
   "avetPlugin": {
     "name": "ga"
