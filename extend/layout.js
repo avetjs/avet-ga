@@ -2,6 +2,7 @@ import React from 'react';
 
 export default ({ config, Router }) => {
   const GA_TRACKING_ID = config.ga.gaTrackingId;
+  const options = config.ga.options || {};
 
   const GAHead = {
     content: [
@@ -15,7 +16,7 @@ export default ({ config, Router }) => {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments)};
             gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}');
+            gtag('config', '${GA_TRACKING_ID}', ${JSON.stringify(options)});
           `,
         }}
       />,
